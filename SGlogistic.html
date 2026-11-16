@@ -4,23 +4,14 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SG Logistic & Transporte</title>
 
-  <link
-    rel="icon"
-    type="image/png"
-    href="Imagenes/favicon.png"
-  >
-
-  <!-- Aquí continúa tu código y los estilos -->
-<style>
+  <link rel="icon" type="image/png" href="Imagenes/favicon.png">
 
 
+  <style>
     :root {
       --rojo: #c91d29;
       --rojo-oscuro: #a41620;
@@ -196,16 +187,12 @@
       color: white;
 
       background:
-        linear-gradient(
-          90deg,
+        linear-gradient(90deg,
           rgba(12, 20, 28, 0.94),
           rgba(12, 20, 28, 0.72) 55%,
-          rgba(12, 20, 28, 0.25)
-        ),
-        url(
-          "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2000&q=85"
-        )
-        center / cover;
+          rgba(12, 20, 28, 0.25)),
+        url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2000&q=85"
+        ) center / cover;
     }
 
     .principal .contenedor {
@@ -836,413 +823,444 @@
         transition: none !important;
       }
     }
-    /* Paleta de SG Logistic & Transporte */
-:root {
-  --azul: #001659;
-  --azul-oscuro: #08132e;
-  --naranja: #ff5e14;
-
-  /* Actualiza las referencias del código anterior */
-  --rojo: var(--naranja);
-  --rojo-oscuro: #c94300;
-  --negro: var(--azul);
-  --gris: #5e687b;
-  --fondo: #f3f5fa;
-  --borde: #dce2ed;
-  --blanco: #ffffff;
-}
-
-/* Barra superior */
-.barra-superior {
-  background: var(--azul);
-}
-
-/* Portada */
-.principal {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0, 22, 89, 0.95),
-      rgba(0, 22, 89, 0.76) 55%,
-      rgba(0, 22, 89, 0.25)
-    ),
-    url(
-      "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2000&q=85"
-    )
-    center / cover;
-}
-
-.principal .etiqueta {
-  color: #ffbc98;
-}
-
-h1 span {
-  color: #ff995f;
-}
-
-/* Botones: azul con detalle naranja */
-.boton {
-  background: var(--azul);
-  border-color: var(--azul);
-  border-bottom: 3px solid var(--naranja);
-  color: white;
-}
-
-.boton:hover {
-  background: #12367c;
-  border-color: #12367c;
-  border-bottom-color: var(--naranja);
-}
-
-.boton-secundario {
-  background: transparent;
-  border-color: #ffffff80;
-}
-
-.boton-secundario:hover {
-  background: #ffffff15;
-  border-color: white;
-}
-
-/* Títulos pequeños y enlaces */
-.etiqueta,
-.numero,
-.servicio a,
-.paso b {
-  color: var(--azul);
-}
-
-.servicio a:hover,
-nav a:hover,
-.datos-contacto a:hover {
-  color: #b83b00;
-}
-
-/* Panel de la empresa */
-.panel-empresa {
-  background:
-    linear-gradient(
-      135deg,
-      var(--azul),
-      var(--azul-oscuro)
-    );
-
-  border-bottom: 4px solid var(--naranja);
-}
-
-/* Cobertura internacional */
-.cobertura {
-  background: var(--azul);
-}
-
-.cobertura .etiqueta {
-  color: #ffbc98;
-}
-
-/* Pie de página */
-footer {
-  background: var(--azul-oscuro);
-  border-top-color: var(--naranja);
-}
-
-/* Enfoque con teclado */
-:focus-visible {
-  outline-color: #2563eb;
-}
-/* Servicios con fotografías de fondo */
-.servicio {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-
-  min-height: 370px;
-  padding: 30px 25px;
-
-  background-color: var(--azul);
-  background-image: var(--foto-servicio);
-  background-size: cover;
-  background-position: center;
-
-  border: 1px solid transparent;
-  border-bottom: 4px solid var(--naranja);
-  color: white;
-}
-
-/* Capa azul para mantener el texto legible */
-.servicio::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-
-  background: linear-gradient(
-    180deg,
-    rgba(0, 22, 89, 0.72),
-    rgba(0, 22, 89, 0.90)
-  );
-}
-
-/* Fotografía de cada servicio */
-.servicio-maritimo {
-  --foto-servicio: url("Imagenes/Barco.jpg");
-}
-
-.servicio-aereo {
-  --foto-servicio: url("Imagenes/Avion.jpg");
-}
-
-.servicio-terrestre {
-  --foto-servicio: url("Imagenes/Camion.jpg");
-}
-
-.servicio-aduanas {
-  --foto-servicio: url("Imagenes/Aduana.jpg");
-}
-
-/* Textos sobre las fotografías */
-.servicio .numero {
-  color: #ffbc98;
-}
-
-.servicio h3 {
-  color: white;
-}
-
-.servicio p {
-  color: #f0f3fa;
-}
-
-.servicio a {
-  color: white;
-  border-top-color: #ffffff50;
-}
-
-.servicio a:hover {
-  color: #ffbc98;
-}
-
-.servicio:hover {
-  border-color: var(--naranja);
-}
-
-@media (max-width: 480px) {
-  .servicio {
-    min-height: 320px;
-  }
-}
-.mapa-contacto {
-  width: 100%;
-  margin-top: 25px;
-  overflow: hidden;
-
-  border: 1px solid var(--borde);
-  border-radius: 12px;
-}
-
-.mapa-contacto iframe {
-  display: block;
-  width: 100%;
-  height: 300px;
-}
-/* Contacto: información y mapa junto al formulario */
-#contacto .contacto-columnas {
-  display: grid;
-  grid-template-columns:
-    minmax(0, 0.85fr)
-    minmax(0, 1.15fr);
-  gap: 45px;
-  align-items: start;
-}
-
-.contacto-informacion,
-#formulario-cotizacion {
-  min-width: 0;
-}
-
-.contacto-intro {
-  max-width: 440px;
-  color: var(--gris);
-  font-size: 15px;
-}
-
-.contacto-datos {
-  display: grid;
-  gap: 18px;
-  margin: 28px 0;
-}
-
-.contacto-dato {
-  padding-left: 16px;
-  border-left: 3px solid var(--naranja);
-}
-
-.contacto-dato > span {
-  display: block;
-  margin-bottom: 5px;
-
-  color: var(--gris);
-  font-size: 11px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.contacto-dato a {
-  display: block;
-  width: fit-content;
-  max-width: 100%;
-
-  color: var(--azul);
-  font-size: 15px;
-  font-weight: bold;
-  overflow-wrap: anywhere;
-}
-
-.contacto-dato a:hover {
-  text-decoration: underline;
-}
-
-.contacto-dato p {
-  margin: 0;
-  color: var(--azul);
-  font-size: 14px;
-}
-
-#contacto .mapa-contacto {
-  width: 100%;
-  margin-top: 24px;
-  overflow: hidden;
-
-  border: 1px solid var(--borde);
-  border-radius: 12px;
-  background: white;
-}
-
-#contacto .mapa-contacto iframe {
-  display: block;
-  width: 100%;
-  height: 280px;
-  border: 0;
-}
-
-#formulario-cotizacion {
-  width: 100%;
-  margin: 0;
-  padding: 30px;
-
-  border: 1px solid var(--borde);
-  border-top: 4px solid var(--naranja);
-  border-radius: 12px;
-  background: white;
-  box-shadow: 0 8px 25px #00165908;
-}
-
-.titulo-formulario {
-  margin: 0 0 8px;
-  color: var(--azul);
-  font-size: 23px;
-}
-
-.introduccion-formulario {
-  margin: 0 0 25px;
-  color: var(--gris);
-  font-size: 14px;
-}
-
-#formulario-cotizacion .campos {
-  grid-template-columns:
-    minmax(0, 1fr)
-    minmax(0, 1fr);
-}
-
-#formulario-cotizacion .campos > * {
-  min-width: 0;
-}
-
-@media (max-width: 850px) {
-  #contacto .contacto-columnas {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  #formulario-cotizacion {
-    padding: 22px;
-  }
-
-  #formulario-cotizacion .campos {
-    grid-template-columns: 1fr;
-  }
-
-  #contacto .mapa-contacto iframe {
-    height: 240px;
-  }
-}
-/* Aparición al bajar por la página */
-.revelar {
-  opacity: 0;
-  transform: translateY(28px);
-
-  transition:
-    opacity 0.7s ease,
-    transform 0.7s ease;
-
-  transition-delay: var(--demora, 0ms);
-}
-
-.revelar.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Fotos de servicios con acercamiento suave */
-.servicio {
-  background-image: none;
-  isolation: isolate;
-}
-
-/* La fotografía pasa a una capa independiente */
-.servicio::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-
-  background-image: var(--foto-servicio);
-  background-size: cover;
-  background-position: center;
-
-  transform: scale(1);
-  transition: transform 0.8s ease;
-}
-
-/* Mantener la capa azul encima de la fotografía */
-.servicio::before {
-  z-index: -1;
-}
-
-/* Acercamiento al usar mouse */
-@media (hover: hover) and (prefers-reduced-motion: no-preference) {
-  .servicio:hover::after {
-    transform: scale(1.07);
-  }
-}
-
-/* Respetar la preferencia de reducir movimiento */
-@media (prefers-reduced-motion: reduce) {
-  .revelar,
-  .revelar.visible {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-
-  .servicio::after {
-    transform: none;
-    transition: none;
-  }
-}
+
+    :root {
+      --azul: #001659;
+      --azul-oscuro: #08132e;
+      --naranja: #ff5e14;
+
+
+      --rojo: var(--naranja);
+      --rojo-oscuro: #c94300;
+      --negro: var(--azul);
+      --gris: #5e687b;
+      --fondo: #f3f5fa;
+      --borde: #dce2ed;
+      --blanco: #ffffff;
+    }
+
+
+    .barra-superior {
+      background: var(--azul);
+    }
+
+
+    .principal {
+      background:
+        linear-gradient(90deg,
+          rgba(0, 22, 89, 0.95),
+          rgba(0, 22, 89, 0.76) 55%,
+          rgba(0, 22, 89, 0.25)),
+        url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2000&q=85"
+        ) center / cover;
+    }
+
+    .principal .etiqueta {
+      color: #ffbc98;
+    }
+
+    h1 span {
+      color: #ff995f;
+    }
+
+
+    .boton {
+      background: var(--azul);
+      border-color: var(--azul);
+      border-bottom: 3px solid var(--naranja);
+      color: white;
+    }
+
+    .boton:hover {
+      background: #12367c;
+      border-color: #12367c;
+      border-bottom-color: var(--naranja);
+    }
+
+    .boton-secundario {
+      background: transparent;
+      border-color: #ffffff80;
+    }
+
+    .boton-secundario:hover {
+      background: #ffffff15;
+      border-color: white;
+    }
+
+
+    .etiqueta,
+    .numero,
+    .servicio a,
+    .paso b {
+      color: var(--azul);
+    }
+
+    .servicio a:hover,
+    nav a:hover,
+    .datos-contacto a:hover {
+      color: #b83b00;
+    }
+
+
+    .panel-empresa {
+      background:
+        linear-gradient(135deg,
+          var(--azul),
+          var(--azul-oscuro));
+
+      border-bottom: 4px solid var(--naranja);
+    }
+
+
+    .cobertura {
+      background: var(--azul);
+    }
+
+    .cobertura .etiqueta {
+      color: #ffbc98;
+    }
+
+
+    footer {
+      background: var(--azul-oscuro);
+      border-top-color: var(--naranja);
+    }
+
+
+    :focus-visible {
+      outline-color: #2563eb;
+    }
+
+    .servicio {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+
+      min-height: 370px;
+      padding: 30px 25px;
+
+      background-color: var(--azul);
+      background-image: var(--foto-servicio);
+      background-size: cover;
+      background-position: center;
+
+      border: 1px solid transparent;
+      border-bottom: 4px solid var(--naranja);
+      color: white;
+    }
+
+
+    .servicio::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+
+      background: linear-gradient(180deg,
+          rgba(0, 22, 89, 0.72),
+          rgba(0, 22, 89, 0.90));
+    }
+
+
+    .servicio-maritimo {
+      --foto-servicio: url("Imagenes/Barco.jpg");
+    }
+
+    .servicio-aereo {
+      --foto-servicio: url("Imagenes/Avion.jpg");
+    }
+
+    .servicio-terrestre {
+      --foto-servicio: url("Imagenes/Camion.jpg");
+    }
+
+    .servicio-aduanas {
+      --foto-servicio: url("Imagenes/Aduana.jpg");
+    }
+
+
+    .servicio .numero {
+      color: #ffbc98;
+    }
+
+    .servicio h3 {
+      color: white;
+    }
+
+    .servicio p {
+      color: #f0f3fa;
+    }
+
+    .servicio a {
+      color: white;
+      border-top-color: #ffffff50;
+    }
+
+    .servicio a:hover {
+      color: #ffbc98;
+    }
+
+    .servicio:hover {
+      border-color: var(--naranja);
+    }
+
+    @media (max-width: 480px) {
+      .servicio {
+        min-height: 320px;
+      }
+    }
+
+    .mapa-contacto {
+      width: 100%;
+      margin-top: 25px;
+      overflow: hidden;
+
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+    }
+
+    .mapa-contacto iframe {
+      display: block;
+      width: 100%;
+      height: 300px;
+    }
+
+    #contacto .contacto-columnas {
+      display: grid;
+      grid-template-columns:
+        minmax(0, 0.85fr) minmax(0, 1.15fr);
+      gap: 45px;
+      align-items: start;
+    }
+
+    .contacto-informacion,
+    #formulario-cotizacion {
+      min-width: 0;
+    }
+
+    .contacto-intro {
+      max-width: 440px;
+      color: var(--gris);
+      font-size: 15px;
+    }
+
+    .contacto-datos {
+      display: grid;
+      gap: 18px;
+      margin: 28px 0;
+    }
+
+    .contacto-dato {
+      padding-left: 16px;
+      border-left: 3px solid var(--naranja);
+    }
+
+    .contacto-dato>span {
+      display: block;
+      margin-bottom: 5px;
+
+      color: var(--gris);
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .contacto-dato a {
+      display: block;
+      width: fit-content;
+      max-width: 100%;
+
+      color: var(--azul);
+      font-size: 15px;
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
+    .contacto-dato a:hover {
+      text-decoration: underline;
+    }
+
+    .contacto-dato p {
+      margin: 0;
+      color: var(--azul);
+      font-size: 14px;
+    }
+
+    #contacto .mapa-contacto {
+      width: 100%;
+      margin-top: 24px;
+      overflow: hidden;
+
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      background: white;
+    }
+
+    #contacto .mapa-contacto iframe {
+      display: block;
+      width: 100%;
+      height: 280px;
+      border: 0;
+    }
+
+    #formulario-cotizacion {
+      width: 100%;
+      margin: 0;
+      padding: 30px;
+
+      border: 1px solid var(--borde);
+      border-top: 4px solid var(--naranja);
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 8px 25px #00165908;
+    }
+
+    .titulo-formulario {
+      margin: 0 0 8px;
+      color: var(--azul);
+      font-size: 23px;
+    }
+
+    .introduccion-formulario {
+      margin: 0 0 25px;
+      color: var(--gris);
+      font-size: 14px;
+    }
+
+    #formulario-cotizacion .campos {
+      grid-template-columns:
+        minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    #formulario-cotizacion .campos>* {
+      min-width: 0;
+    }
+
+    @media (max-width: 850px) {
+      #contacto .contacto-columnas {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #formulario-cotizacion {
+        padding: 22px;
+      }
+
+      #formulario-cotizacion .campos {
+        grid-template-columns: 1fr;
+      }
+
+      #contacto .mapa-contacto iframe {
+        height: 240px;
+      }
+    }
+
+    .revelar {
+      opacity: 0;
+      transform: translateY(28px);
+
+      transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+
+      transition-delay: var(--demora, 0ms);
+    }
+
+    .revelar.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    .servicio {
+      background-image: none;
+      isolation: isolate;
+    }
+
+
+    .servicio::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+
+      background-image: var(--foto-servicio);
+      background-size: cover;
+      background-position: center;
+
+      transform: scale(1);
+      transition: transform 0.8s ease;
+    }
+
+
+    .servicio::before {
+      z-index: -1;
+    }
+
+
+    @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+      .servicio:hover::after {
+        transform: scale(1.07);
+      }
+    }
+
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .revelar,
+      .revelar.visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .servicio::after {
+        transform: none;
+        transition: none;
+      }
+    }
+
+    .idioma-boton {
+      padding: 9px 14px;
+      border: 1px solid var(--azul);
+      border-radius: 5px;
+      background: white;
+      color: var(--azul);
+      font-size: 14px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    .idioma-boton:hover {
+      background: var(--azul);
+      color: white;
+    }
+
+
+    @media (min-width: 761px) and (max-width: 1100px) {
+      .barra {
+        gap: 12px;
+      }
+
+      .barra .logo {
+        width: 190px;
+      }
+
+      #menu-principal {
+        gap: 12px;
+      }
+
+      #menu-principal a {
+        font-size: 12px;
+      }
+
+      #menu-principal .boton {
+        padding: 10px;
+      }
+    }
   </style>
 </head>
 
@@ -1271,39 +1289,27 @@ footer {
   <header>
     <div class="contenedor barra">
 
-      <a
-        class="marca"
-        href="#inicio"
-        aria-label="SG Logistic & Transporte, inicio"
-      >
-        <img
-          src="https://sglogisticsv.com/wp-content/uploads/2026/03/Logo-Vertical.png"
-          alt="SG Logistic & Transporte"
-          class="logo"
-        >
+      <a class="marca" href="#inicio" aria-label="SG Logistic & Transporte, inicio">
+        <img src="https://sglogisticsv.com/wp-content/uploads/2026/03/Logo-Vertical.png" alt="SG Logistic & Transporte"
+          class="logo">
       </a>
 
-      <button
-        class="menu-boton"
-        type="button"
-        aria-expanded="false"
-        aria-controls="menu-principal"
-      >
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="menu-principal">
         Menú ☰
       </button>
 
-      <nav
-        id="menu-principal"
-        aria-label="Menú principal"
-      >
+      <nav id="menu-principal" aria-label="Menú principal">
         <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
         <a href="#nosotros">Nosotros</a>
-        <a href="#cobertura">Cobertura</a>
+        <a href="#cobertura">Alcance internacional</a>
 
         <a class="boton" href="#contacto">
           Solicitar cotización
         </a>
+        <button type="button" id="cambiar-idioma" class="idioma-boton" aria-label="Switch to English">
+          English
+        </button>
       </nav>
 
     </div>
@@ -1335,10 +1341,7 @@ footer {
             Cotizar mi embarque →
           </a>
 
-          <a
-            class="boton boton-secundario"
-            href="#servicios"
-          >
+          <a class="boton boton-secundario" href="#servicios">
             Conocer los servicios
           </a>
 
@@ -1399,10 +1402,7 @@ footer {
               y seguimiento de embarques.
             </p>
 
-            <a
-              href="#contacto"
-              data-servicio="Transporte marítimo"
-            >
+            <a href="#contacto" data-servicio="Transporte marítimo">
               Consultar servicio →
             </a>
           </article>
@@ -1418,15 +1418,12 @@ footer {
               para sus envíos.
             </p>
 
-            <a
-              href="#contacto"
-              data-servicio="Transporte aéreo"
-            >
+            <a href="#contacto" data-servicio="Transporte aéreo">
               Consultar servicio →
             </a>
           </article>
 
-         <article class="servicio servicio-terrestre">
+          <article class="servicio servicio-terrestre">
             <span class="numero">03 / POR TIERRA</span>
 
             <h3>Transporte terrestre</h3>
@@ -1436,10 +1433,7 @@ footer {
               de mercancías en Centroamérica y México.
             </p>
 
-            <a
-              href="#contacto"
-              data-servicio="Transporte terrestre"
-            >
+            <a href="#contacto" data-servicio="Transporte terrestre">
               Consultar servicio →
             </a>
           </article>
@@ -1454,10 +1448,7 @@ footer {
               y despacho con agentes aduanales especializados.
             </p>
 
-            <a
-              href="#contacto"
-              data-servicio="Trámites aduanales"
-            >
+            <a href="#contacto" data-servicio="Trámites aduanales">
               Consultar servicio →
             </a>
           </article>
@@ -1532,32 +1523,46 @@ footer {
 
         <div>
           <span class="etiqueta">
-            03 / Conexiones internacionales
+            03 / Alcance internacional
           </span>
 
           <h2>
-            Su próximo mercado<br>
-            comienza con una conexión.
+            Conectamos El Salvador<br>
+            con sus mercados.
           </h2>
 
           <p>
-            Consulte las opciones disponibles para el
-            origen y destino de su carga.
+            Coordinamos sus importaciones y exportaciones
+            mediante una red de agentes internacionales,
+            con opciones de transporte marítimo, aéreo
+            y terrestre.
           </p>
 
+          <a class="boton boton-secundario" href="#contacto">
+            Consultar mi ruta →
+          </a>
+
           <p class="nota-rutas">
-            Las rutas y tiempos de tránsito se revisan
-            según cada embarque.
+            Consulte la disponibilidad para su país de origen
+            y destino. Las rutas, modalidades y tiempos
+            se evalúan según cada embarque.
           </p>
         </div>
 
-        <div class="regiones">
-          <span>Origen</span>
-          <span>Destino</span>
-          <span>Recolección</span>
-          <span>Entrega final</span>
-          <span>Importación</span>
-          <span>Exportación</span>
+        <div>
+          <div class="regiones">
+            <span>Centroamérica</span>
+            <span>Norteamérica</span>
+            <span>Sudamérica</span>
+            <span>Europa</span>
+            <span>Asia</span>
+            <span>Otros destinos bajo consulta</span>
+          </div>
+
+          <p class="nota-rutas">
+            Soluciones desde y hacia El Salvador,
+            según las necesidades de su carga.
+          </p>
         </div>
 
       </div>
@@ -1614,257 +1619,190 @@ footer {
       </div>
     </section>
 
-   <section class="contacto" id="contacto">
-  <div class="contenedor contacto-columnas">
+    <section class="contacto" id="contacto">
+      <div class="contenedor contacto-columnas">
 
-    <!-- Información y mapa -->
-    <div class="contacto-informacion">
 
-      <span class="etiqueta">
-        05 / Hablemos de su embarque
-      </span>
+        <div class="contacto-informacion">
 
-      <h2>Solicite una cotización.</h2>
+          <span class="etiqueta">
+            05 / Hablemos de su embarque
+          </span>
 
-      <p class="contacto-intro">
-        Cuéntenos qué necesita transportar.
-        Nuestro equipo le ayudará a evaluar
-        las opciones para su embarque.
-      </p>
+          <h2>Solicite una cotización.</h2>
 
-      <div class="contacto-datos">
-
-        <div class="contacto-dato">
-          <span>Teléfonos</span>
-
-          <a href="tel:+50325197111">
-            +503 2519-7111
-          </a>
-
-          <a href="tel:+50370935869">
-            +503 7093-5869
-          </a>
-        </div>
-
-        <div class="contacto-dato">
-          <span>Correo electrónico</span>
-
-          <a href="mailto:sales@sglogisticsv.com">
-            sales@sglogisticsv.com
-          </a>
-        </div>
-
-        <div class="contacto-dato">
-          <span>Visítenos</span>
-
-          <p>
-            47 Avenida Norte 11,<br>
-            San Salvador, El Salvador.
+          <p class="contacto-intro">
+            Cuéntenos qué necesita transportar.
+            Nuestro equipo le ayudará a evaluar
+            las opciones para su embarque.
           </p>
-        </div>
 
-      </div>
+          <div class="contacto-datos">
 
-      <div class="mapa-contacto">
-        <iframe
-          title="Ubicación de SG Logistic & Transporte"
-          src="https://www.google.com/maps?q=47+Avenida+Norte+11,+San+Salvador,+El+Salvador&amp;output=embed"
-          width="100%"
-          height="280"
-          style="border: 0;"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+            <div class="contacto-dato">
+              <span>Teléfonos</span>
 
-    </div>
+              <a href="tel:+50325197111">
+                +503 2519-7111
+              </a>
 
-    <!-- Formulario -->
-    <form id="formulario-cotizacion">
+              <a href="tel:+50370935869">
+                +503 7093-5869
+              </a>
+            </div>
 
-      <h3 class="titulo-formulario">
-        Datos de su embarque
-      </h3>
+            <div class="contacto-dato">
+              <span>Correo electrónico</span>
 
-      <p class="introduccion-formulario">
-        Complete la información disponible
-        para preparar su consulta.
-      </p>
+              <a href="mailto:sales@sglogisticsv.com">
+                sales@sglogisticsv.com
+              </a>
+            </div>
 
-      <div class="campos">
+            <div class="contacto-dato">
+              <span>Visítenos</span>
 
-        <label>
-          Nombre completo
-          <input
-            name="nombre"
-            type="text"
-            autocomplete="name"
-            maxlength="120"
-            required
-          >
-        </label>
+              <p>
+                47 Avenida Norte 11,<br>
+                San Salvador, El Salvador.
+              </p>
+            </div>
 
-        <label>
-          Empresa
-          <input
-            name="empresa"
-            type="text"
-            autocomplete="organization"
-            maxlength="160"
-            placeholder="Opcional"
-          >
-        </label>
+          </div>
 
-        <label>
-          Correo electrónico
-          <input
-            name="correo"
-            type="email"
-            autocomplete="email"
-            maxlength="160"
-            required
-          >
-        </label>
-
-        <label>
-          Teléfono
-          <input
-            name="telefono"
-            type="tel"
-            autocomplete="tel"
-            maxlength="40"
-            placeholder="Incluya código de país"
-            required
-          >
-        </label>
-
-        <label>
-          Origen
-          <input
-            name="origen"
-            type="text"
-            maxlength="160"
-            placeholder="Ciudad y país"
-            required
-          >
-        </label>
-
-        <label>
-          Destino
-          <input
-            name="destino"
-            type="text"
-            maxlength="160"
-            placeholder="Ciudad y país"
-            required
-          >
-        </label>
-
-        <label>
-          Servicio
-          <select
-            name="servicio"
-            id="servicio"
-            required
-          >
-            <option value="">
-              Seleccione una opción
-            </option>
-            <option>Transporte marítimo</option>
-            <option>Transporte aéreo</option>
-            <option>Transporte terrestre</option>
-            <option>Trámites aduanales</option>
-            <option>Necesito asesoría</option>
-          </select>
-        </label>
-
-        <label>
-          Tipo de operación
-          <select name="operacion" required>
-            <option value="">
-              Seleccione una opción
-            </option>
-            <option>Importación</option>
-            <option>Exportación</option>
-            <option>Otra operación</option>
-          </select>
-        </label>
-
-        <label class="completo">
-          Datos de la carga
-          <textarea
-            name="carga"
-            maxlength="2000"
-            placeholder="Mercancía, cantidad de bultos, peso bruto, medidas y fecha estimada. Indique si algún dato está pendiente."
-            required
-          ></textarea>
-        </label>
-
-        <button
-          class="boton completo"
-          type="submit"
-        >
-          Preparar solicitud →
-        </button>
-
-      </div>
-
-      <p class="nota">
-        Podrá revisar el mensaje antes de abrir
-        su aplicación de correo. No se envía
-        automáticamente.
-      </p>
-
-      <div id="resultado" hidden>
-
-        <label for="mensaje-preparado">
-          Su solicitud está lista
-        </label>
-
-        <textarea
-          id="mensaje-preparado"
-          readonly
-        ></textarea>
-
-        <div class="acciones-mensaje">
-
-          <a
-            class="boton"
-            id="enviar-correo"
-            href="mailto:sales@sglogisticsv.com"
-          >
-            Abrir correo
-          </a>
-
-          <button
-            class="boton boton-copiar"
-            id="copiar-mensaje"
-            type="button"
-          >
-            Copiar mensaje
-          </button>
+          <div class="mapa-contacto">
+            <iframe title="Ubicación de SG Logistic & Transporte"
+              src="https://www.google.com/maps?q=47+Avenida+Norte+11,+San+Salvador,+El+Salvador&amp;output=embed"
+              width="100%" height="280" style="border: 0;" loading="lazy" allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
 
         </div>
 
-        <p
-          id="estado"
-          role="status"
-          aria-live="polite"
-        ></p>
 
-        <p class="nota">
-          Si no abre una aplicación de correo,
-          copie el mensaje y envíelo a
-          sales@sglogisticsv.com.
-        </p>
+        <form id="formulario-cotizacion">
+
+          <h3 class="titulo-formulario">
+            Datos de su embarque
+          </h3>
+
+          <p class="introduccion-formulario">
+            Complete la información disponible
+            para preparar su consulta.
+          </p>
+
+          <div class="campos">
+
+            <label>
+              Nombre completo
+              <input name="nombre" type="text" autocomplete="name" maxlength="120" required>
+            </label>
+
+            <label>
+              Empresa
+              <input name="empresa" type="text" autocomplete="organization" maxlength="160" placeholder="Opcional">
+            </label>
+
+            <label>
+              Correo electrónico
+              <input name="correo" type="email" autocomplete="email" maxlength="160" required>
+            </label>
+
+            <label>
+              Teléfono
+              <input name="telefono" type="tel" autocomplete="tel" maxlength="40" placeholder="Incluya código de país"
+                required>
+            </label>
+
+            <label>
+              Origen
+              <input name="origen" type="text" maxlength="160" placeholder="Ciudad y país" required>
+            </label>
+
+            <label>
+              Destino
+              <input name="destino" type="text" maxlength="160" placeholder="Ciudad y país" required>
+            </label>
+
+            <label>
+              Servicio
+              <select name="servicio" id="servicio" required>
+                <option value="">
+                  Seleccione una opción
+                </option>
+                <option>Transporte marítimo</option>
+                <option>Transporte aéreo</option>
+                <option>Transporte terrestre</option>
+                <option>Trámites aduanales</option>
+                <option>Necesito asesoría</option>
+              </select>
+            </label>
+
+            <label>
+              Tipo de operación
+              <select name="operacion" required>
+                <option value="">
+                  Seleccione una opción
+                </option>
+                <option>Importación</option>
+                <option>Exportación</option>
+                <option>Otra operación</option>
+              </select>
+            </label>
+
+            <label class="completo">
+              Datos de la carga
+              <textarea name="carga" maxlength="2000"
+                placeholder="Mercancía, cantidad de bultos, peso bruto, medidas y fecha estimada. Indique si algún dato está pendiente."
+                required></textarea>
+            </label>
+
+            <button class="boton completo" type="submit">
+              Preparar solicitud →
+            </button>
+
+          </div>
+
+          <p class="nota">
+            Podrá revisar el mensaje antes de abrir
+            su aplicación de correo. No se envía
+            automáticamente.
+          </p>
+
+          <div id="resultado" hidden>
+
+            <label for="mensaje-preparado">
+              Su solicitud está lista
+            </label>
+
+            <textarea id="mensaje-preparado" readonly></textarea>
+
+            <div class="acciones-mensaje">
+
+              <a class="boton" id="enviar-correo" href="mailto:sales@sglogisticsv.com">
+                Abrir correo
+              </a>
+
+              <button class="boton boton-copiar" id="copiar-mensaje" type="button">
+                Copiar mensaje
+              </button>
+
+            </div>
+
+            <p id="estado" role="status" aria-live="polite"></p>
+
+            <p class="nota">
+              Si no abre una aplicación de correo,
+              copie el mensaje y envíelo a
+              sales@sglogisticsv.com.
+            </p>
+
+          </div>
+
+        </form>
 
       </div>
-
-    </form>
-
-  </div>
-</section>
+    </section>
 
     <section>
       <div class="contenedor preguntas">
@@ -1932,12 +1870,8 @@ footer {
       <div class="footer-columnas">
 
         <div>
-          <img
-            src="https://sglogisticsv.com/wp-content/uploads/2026/03/Logo-Vertical-Blanco-1024x309.png"
-            alt="SG Logistic & Transporte"
-            class="logo-footer"
-            loading="lazy"
-          >
+          <img src="https://sglogisticsv.com/wp-content/uploads/2026/03/Logo-Vertical-Blanco-1024x309.png"
+            alt="SG Logistic & Transporte" class="logo-footer" loading="lazy">
 
           <p>
             Logística y transporte<br>
@@ -1951,7 +1885,7 @@ footer {
           <a href="#inicio">Inicio</a>
           <a href="#servicios">Servicios</a>
           <a href="#nosotros">Nosotros</a>
-          <a href="#cobertura">Cobertura</a>
+          <a href="#cobertura">Alcance internacional</a>
           <a href="#contacto">Solicitar cotización</a>
         </div>
 
@@ -2097,7 +2031,7 @@ footer {
           ).trim();
         }
 
-        // Evitar campos llenados solo con espacios.
+
         const camposObligatorios = [
           "nombre",
           "correo",
@@ -2116,7 +2050,11 @@ footer {
           campo.setCustomValidity(
             leer(nombre)
               ? ""
-              : "Complete este campo."
+              : (
+                document.documentElement.lang === "en"
+                  ? "Please complete this field."
+                  : "Complete este campo."
+              )
           );
 
           if (!campo.checkValidity()) {
@@ -2125,38 +2063,71 @@ footer {
           }
         }
 
+        const en = document.documentElement.lang === "en";
+
+        const serviciosIngles = {
+          "Transporte marítimo": "Ocean freight",
+          "Transporte aéreo": "Air freight",
+          "Transporte terrestre": "Road freight",
+          "Trámites aduanales": "Customs clearance",
+          "Necesito asesoría": "I need advice"
+        };
+
+        const operacionesIngles = {
+          "Importación": "Import",
+          "Exportación": "Export",
+          "Otra operación": "Other operation"
+        };
+
+        const servicioElegido = en
+          ? serviciosIngles[leer("servicio")] || leer("servicio")
+          : leer("servicio");
+
+        const operacionElegida = en
+          ? operacionesIngles[leer("operacion")] || leer("operacion")
+          : leer("operacion");
+
         const mensaje = [
-          "Hola, SG Logistic & Transporte.",
-          "Quisiera solicitar una cotización.",
+          en
+            ? "Hello, SG Logistic & Transporte."
+            : "Hola, SG Logistic & Transporte.",
+
+          en
+            ? "I would like to request a quote."
+            : "Quisiera solicitar una cotización.",
+
           "",
-          "Nombre: " + leer("nombre"),
-          "Empresa: " + (
-            leer("empresa") || "No indicada"
-          ),
-          "Correo: " + leer("correo"),
-          "Teléfono: " + leer("telefono"),
+          (en ? "Name: " : "Nombre: ") + leer("nombre"),
+
+          (en ? "Company: " : "Empresa: ") +
+          (leer("empresa") || (en ? "Not provided" : "No indicada")),
+
+          (en ? "Email: " : "Correo: ") + leer("correo"),
+          (en ? "Phone: " : "Teléfono: ") + leer("telefono"),
           "",
-          "Origen: " + leer("origen"),
-          "Destino: " + leer("destino"),
-          "Servicio: " + leer("servicio"),
-          "Operación: " + leer("operacion"),
+          (en ? "Origin: " : "Origen: ") + leer("origen"),
+          (en ? "Destination: " : "Destino: ") + leer("destino"),
+          (en ? "Service: " : "Servicio: ") + servicioElegido,
+          (en ? "Operation: " : "Operación: ") + operacionElegida,
           "",
-          "DATOS DE LA CARGA",
+          en ? "CARGO DETAILS" : "DATOS DE LA CARGA",
           leer("carga")
         ].join("\n");
 
         const asunto =
-          "Solicitud de cotización - " +
-          leer("servicio");
+          (en ? "Quote request - " : "Solicitud de cotización - ") +
+          servicioElegido;
 
         mensajePreparado.value = mensaje;
 
-        enviarCorreo.href =
-          "mailto:sales@sglogisticsv.com" +
-          "?subject=" +
-          encodeURIComponent(asunto) +
-          "&body=" +
-          encodeURIComponent(mensaje);
+       enviarCorreo.href =
+  "https://outlook.office.com/mail/deeplink/compose" +
+  "?to=" + encodeURIComponent("sales@sglogisticsv.com") +
+  "&subject=" + encodeURIComponent(asunto) +
+  "&body=" + encodeURIComponent(mensaje);
+
+enviarCorreo.target = "_blank";
+enviarCorreo.rel = "noopener noreferrer";
 
         resultado.hidden = false;
 
@@ -2169,7 +2140,7 @@ footer {
       }
     );
 
-    // Limpiar mensajes de validación al escribir.
+
     formulario.addEventListener(
       "input",
       function (evento) {
@@ -2180,8 +2151,7 @@ footer {
           evento.target.setCustomValidity("");
         }
 
-        // Si modifica los datos, debe preparar
-        // nuevamente la solicitud.
+
         resultado.hidden = true;
         estado.textContent = "";
       }
@@ -2217,25 +2187,24 @@ footer {
       }
     );
   </script>
-<script>
-(function () {
-  "use strict";
+  <script>
+    (function () {
+      "use strict";
 
-  // Si el navegador no admite la animación,
-  // el contenido permanece visible normalmente.
-  if (!("IntersectionObserver" in window)) {
-    return;
-  }
 
-  if (
-    window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches
-  ) {
-    return;
-  }
+      if (!("IntersectionObserver" in window)) {
+        return;
+      }
 
-  const elementos = document.querySelectorAll(`
+      if (
+        window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches
+      ) {
+        return;
+      }
+
+      const elementos = document.querySelectorAll(`
     .encabezado-seccion,
     .servicio,
     .panel-empresa,
@@ -2249,40 +2218,442 @@ footer {
     .preguntas details
   `);
 
- const observador = new IntersectionObserver(function (entradas) {
-  entradas.forEach(function (entrada) {
-    if (entrada.isIntersecting) {
-      // Muestra el elemento cuando entra en la pantalla.
-      entrada.target.classList.add("visible");
-    } else {
-      // Reinicia la animación cuando sale de la pantalla.
-      entrada.target.classList.remove("visible");
-    }
-  });
-}, {
-  threshold: 0.08,
-  rootMargin: "0px 0px -25px 0px"
-});
+      const observador = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (entrada) {
+          if (entrada.isIntersecting) {
 
-  elementos.forEach(function (elemento) {
-    // Las tarjetas aparecen una después de otra.
-    if (elemento.matches(".servicio, .paso")) {
-      const hermanos = Array.from(
-        elemento.parentElement.children
+            entrada.target.classList.add("visible");
+          } else {
+
+            entrada.target.classList.remove("visible");
+          }
+        });
+      }, {
+        threshold: 0.08,
+        rootMargin: "0px 0px -25px 0px"
+      });
+
+      elementos.forEach(function (elemento) {
+
+        if (elemento.matches(".servicio, .paso")) {
+          const hermanos = Array.from(
+            elemento.parentElement.children
+          );
+
+          const posicion = hermanos.indexOf(elemento);
+
+          elemento.style.setProperty(
+            "--demora",
+            (posicion % 4) * 100 + "ms"
+          );
+        }
+
+        elemento.classList.add("revelar");
+        observador.observe(elemento);
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      "use strict";
+
+      const boton = document.getElementById("cambiar-idioma");
+      if (!boton) return;
+
+      const traducciones = {
+        "Alcance internacional": "Global reach",
+
+        "03 / Alcance internacional": "03 / Global reach",
+
+        "Conectamos El Salvador": "Connecting El Salvador",
+
+        "con sus mercados.": "to your markets.",
+
+        "Coordinamos sus importaciones y exportaciones mediante una red de agentes internacionales, con opciones de transporte marítimo, aéreo y terrestre.":
+          "We coordinate your imports and exports through a network of international agents, offering ocean, air and road freight options.",
+
+        "Consultar mi ruta →": "Inquire about my route →",
+
+        "Consulte la disponibilidad para su país de origen y destino. Las rutas, modalidades y tiempos se evalúan según cada embarque.":
+          "Ask about availability for your origin and destination countries. Routes, transport modes and transit times are assessed for each shipment.",
+
+        "Centroamérica": "Central America",
+
+        "Norteamérica": "North America",
+
+        "Sudamérica": "South America",
+
+        "Europa": "Europe",
+
+        "Asia": "Asia",
+
+        "Otros destinos bajo consulta": "Other destinations upon request",
+
+        "Soluciones desde y hacia El Salvador, según las necesidades de su carga.":
+          "Solutions to and from El Salvador, tailored to your cargo needs.",
+        "El Salvador · Logística internacional":
+          "El Salvador · International logistics",
+
+        "Menú ☰": "Menu ☰",
+        "Inicio": "Home",
+        "Servicios": "Services",
+        "Nosotros": "About us",
+        "Cobertura": "Coverage",
+        "Solicitar cotización": "Request a quote",
+
+        "Desde y hacia El Salvador": "To and from El Salvador",
+        "Movemos su carga.": "We move your cargo.",
+        "Conectamos su negocio": "Connecting your business",
+        "con el mundo.": "to the world.",
+
+        "Soluciones de transporte y logística para sus importaciones y exportaciones.":
+          "Transport and logistics solutions for your imports and exports.",
+
+        "Cotizar mi embarque →": "Get a shipping quote →",
+        "Conocer los servicios": "Explore our services",
+
+        "Importaciones y exportaciones": "Imports and exports",
+        "Conexiones internacionales": "International connections",
+        "Opciones para cada carga": "Options for every shipment",
+        "Marítimo, aéreo y terrestre": "Ocean, air and road freight",
+        "Atención personalizada": "Personalized service",
+        "Acompañamiento en su operación": "Support throughout your shipment",
+
+        "01 / Nuestros servicios": "01 / Our services",
+        "La solución adecuada": "The right solution",
+        "para cada embarque.": "for every shipment.",
+
+        "Cuéntenos qué necesita transportar y evaluemos las alternativas para su operación.":
+          "Tell us what you need to ship, and we will explore the options for your operation.",
+
+        "01 / POR MAR": "01 / BY SEA",
+        "Transporte marítimo": "Ocean freight",
+
+        "Contenedores completos FCL y carga consolidada LCL, con coordinación y seguimiento de embarques.":
+          "Full container loads (FCL) and less-than-container loads (LCL), with shipment coordination and follow-up.",
+
+        "Consultar servicio →": "Inquire about this service →",
+
+        "02 / POR AIRE": "02 / BY AIR",
+        "Transporte aéreo": "Air freight",
+
+        "Carga directa y consolidada, gestión documental y opciones puerta a puerta para sus envíos.":
+          "Direct and consolidated cargo, documentation management and door-to-door shipping options.",
+
+        "03 / POR TIERRA": "03 / BY ROAD",
+        "Transporte terrestre": "Road freight",
+
+        "Recolección, consolidación y entregas de mercancías en Centroamérica y México.":
+          "Cargo pickup, consolidation and delivery throughout Central America and Mexico.",
+
+        "04 / ADUANAS": "04 / CUSTOMS",
+        "Trámites aduanales": "Customs clearance",
+
+        "Apoyo documental, clasificación arancelaria y despacho con agentes aduanales especializados.":
+          "Documentation support, tariff classification and clearance through specialized customs brokers.",
+
+        "Su carga.": "Your cargo.",
+        "Nuestro": "Our",
+        "compromiso.": "commitment.",
+        "EL SALVADOR · DESDE 2018": "EL SALVADOR · SINCE 2018",
+
+        "02 / Acerca de nosotros": "02 / About us",
+        "Un aliado para": "A partner for",
+        "su operación logística.": "your logistics operations.",
+
+        "Somos una empresa salvadoreña fundada en 2018, especializada en soluciones logísticas para importaciones y exportaciones.":
+          "We are a Salvadoran company founded in 2018, specializing in logistics solutions for imports and exports.",
+
+        "Coordinamos operaciones mediante una red de agentes internacionales y atención personalizada.":
+          "We coordinate shipments through a network of international agents, providing personalized service.",
+
+        "Misión": "Mission",
+
+        "Brindar servicios logísticos de calidad y eficiencia para satisfacer a nuestros clientes.":
+          "To provide quality, efficient logistics services that meet our customers’ needs.",
+
+        "Visión": "Vision",
+
+        "Ser la mejor decisión en transporte para nuestros clientes.":
+          "To be our customers’ preferred transportation partner.",
+
+        "03 / Conexiones internacionales": "03 / International connections",
+        "Su próximo mercado": "Your next market",
+        "comienza con una conexión.": "starts with a connection.",
+
+        "Consulte las opciones disponibles para el origen y destino de su carga.":
+          "Ask about the available options for your cargo’s origin and destination.",
+
+        "Las rutas y tiempos de tránsito se revisan según cada embarque.":
+          "Routes and transit times are assessed for each shipment.",
+
+        "Origen": "Origin",
+        "Destino": "Destination",
+        "Recolección": "Pickup",
+        "Entrega final": "Final delivery",
+        "Importación": "Import",
+        "Exportación": "Export",
+
+        "04 / Preparemos su operación": "04 / Plan your shipment",
+        "De la consulta a la coordinación.": "From inquiry to coordination.",
+        "Comparta los datos": "Share the details",
+
+        "Indique origen, destino y características de su mercancía.":
+          "Provide the origin, destination and details of your goods.",
+
+        "Revise las opciones": "Review your options",
+
+        "Consulte modalidad, alcance y condiciones del servicio.":
+          "Discuss the transport mode, service scope and terms.",
+
+        "Confirme los detalles": "Confirm the details",
+
+        "Revise documentos y fechas antes de coordinar el embarque.":
+          "Review documents and dates before arranging your shipment.",
+
+        "Coordine su carga": "Coordinate your shipment",
+
+        "Mantenga el contacto con nuestro equipo durante su operación.":
+          "Stay in touch with our team throughout your shipment.",
+
+        "05 / Hablemos de su embarque": "05 / Let’s discuss your shipment",
+        "Solicite una cotización.": "Request a quote.",
+
+        "Cuéntenos qué necesita transportar. Nuestro equipo le ayudará a evaluar las opciones para su embarque.":
+          "Tell us what you need to ship. Our team will help you assess your shipping options.",
+
+        "Teléfonos": "Phone numbers",
+        "Correo electrónico": "Email address",
+        "Visítenos": "Visit us",
+
+        "Datos de su embarque": "Shipment details",
+
+        "Complete la información disponible para preparar su consulta.":
+          "Provide the available information to prepare your inquiry.",
+
+        "Nombre completo": "Full name",
+        "Empresa": "Company",
+        "Teléfono": "Phone number",
+        "Servicio": "Service",
+        "Seleccione una opción": "Select an option",
+        "Necesito asesoría": "I need advice",
+        "Tipo de operación": "Operation type",
+        "Otra operación": "Other operation",
+        "Datos de la carga": "Cargo details",
+        "Preparar solicitud →": "Prepare inquiry →",
+
+        "Podrá revisar el mensaje antes de abrir su aplicación de correo. No se envía automáticamente.":
+          "You can review your message before opening your email application. It is not sent automatically.",
+
+        "Su solicitud está lista": "Your inquiry is ready",
+        "Abrir correo": "Open email",
+        "Copiar mensaje": "Copy message",
+
+        "Si no abre una aplicación de correo, copie el mensaje y envíelo a sales@sglogisticsv.com.":
+          "If no email application opens, copy the message and send it to sales@sglogisticsv.com.",
+
+        "Antes de cotizar": "Before requesting a quote",
+        "Preguntas frecuentes": "Frequently asked questions",
+        "¿Qué datos debo compartir?": "What information should I provide?",
+
+        "Prepare origen, destino, descripción de la mercancía, número de bultos, peso bruto y medidas.":
+          "Provide the origin, destination, description of the goods, number of packages, gross weight and dimensions.",
+
+        "¿Qué significan FCL y LCL?": "What do FCL and LCL mean?",
+
+        "FCL corresponde a un contenedor completo. LCL permite transportar carga consolidada compartiendo espacio con otros embarques.":
+          "FCL means full container load. LCL means less-than-container load, allowing your cargo to share container space with other shipments.",
+
+        "¿Puedo consultar si aún me faltan datos?":
+          "Can I inquire if some details are still missing?",
+
+        "Sí. Indique en su solicitud qué información está pendiente para orientar la consulta.":
+          "Yes. Let us know which details are still pending so we can guide you.",
+
+        "¿El formulario confirma una contratación?":
+          "Does this form confirm a booking?",
+
+        "No. Prepara una solicitud de cotización. El servicio se coordina directamente con el equipo de SG Logistic.":
+          "No. It prepares a quote request. Services are arranged directly with the SG Logistic team.",
+
+        "Logística y transporte": "Logistics and transportation",
+        "desde y hacia El Salvador.": "to and from El Salvador.",
+        "Explore nuestra página": "Explore our website",
+        "Contáctenos": "Contact us",
+
+        "SG LOGISTIC & TRANSPORTE S.A. de C.V. Todos los derechos reservados.":
+          "SG LOGISTIC & TRANSPORTE S.A. de C.V. All rights reserved.",
+
+        "Opcional": "Optional",
+        "Incluya código de país": "Include country code",
+        "Ciudad y país": "City and country",
+
+        "Mercancía, cantidad de bultos, peso bruto, medidas y fecha estimada. Indique si algún dato está pendiente.":
+          "Goods, number of packages, gross weight, dimensions and estimated date. Indicate any pending details.",
+
+        "Ubicación de SG Logistic & Transporte":
+          "SG Logistic & Transporte location",
+
+        "Mensaje copiado correctamente.": "Message copied successfully.",
+
+        "El mensaje está seleccionado. Presione Ctrl + C para copiarlo.":
+          "The message is selected. Press Ctrl + C to copy it."
+      };
+
+      function normalizar(texto) {
+        return texto.replace(/\s+/g, " ").trim();
+      }
+
+
+      document.querySelectorAll("select option").forEach(function (opcion) {
+        if (!opcion.hasAttribute("value")) {
+          opcion.value = opcion.textContent.trim();
+        }
+      });
+
+      const textos = [];
+      const atributos = [];
+      const tituloOriginal = document.title;
+
+      const recorrido = document.createTreeWalker(
+        document.body,
+        NodeFilter.SHOW_TEXT,
+        {
+          acceptNode: function (nodo) {
+            if (
+              !nodo.parentElement ||
+              nodo.parentElement.closest(
+                "script, style, textarea, #cambiar-idioma, #estado"
+              )
+            ) {
+              return NodeFilter.FILTER_REJECT;
+            }
+
+            return traducciones[normalizar(nodo.nodeValue)]
+              ? NodeFilter.FILTER_ACCEPT
+              : NodeFilter.FILTER_REJECT;
+          }
+        }
       );
 
-      const posicion = hermanos.indexOf(elemento);
+      let nodo;
 
-      elemento.style.setProperty(
-        "--demora",
-        (posicion % 4) * 100 + "ms"
-      );
-    }
+      while ((nodo = recorrido.nextNode())) {
+        textos.push({
+          nodo: nodo,
+          original: nodo.nodeValue,
+          ingles: traducciones[normalizar(nodo.nodeValue)]
+        });
+      }
 
-    elemento.classList.add("revelar");
-    observador.observe(elemento);
-  });
-})();
-</script>
+      document.querySelectorAll(
+        "[placeholder], iframe[title]"
+      ).forEach(function (elemento) {
+        ["placeholder", "title"].forEach(function (atributo) {
+          const original = elemento.getAttribute(atributo);
+
+          if (original && traducciones[normalizar(original)]) {
+            atributos.push({
+              elemento: elemento,
+              atributo: atributo,
+              original: original,
+              ingles: traducciones[normalizar(original)]
+            });
+          }
+        });
+      });
+
+      function actualizarEstado() {
+        const elemento = document.getElementById("estado");
+        if (!elemento) return;
+
+        const texto = normalizar(elemento.textContent);
+        const ingles = document.documentElement.lang === "en";
+
+        if (ingles && traducciones[texto]) {
+          elemento.textContent = traducciones[texto];
+        } else if (!ingles) {
+          const original = Object.keys(traducciones).find(function (clave) {
+            return traducciones[clave] === texto;
+          });
+
+          if (original) elemento.textContent = original;
+        }
+      }
+
+      const estado = document.getElementById("estado");
+
+      if (estado) {
+        new MutationObserver(actualizarEstado).observe(estado, {
+          childList: true,
+          subtree: true,
+          characterData: true
+        });
+      }
+
+      function cambiarIdioma(idioma) {
+        const ingles = idioma === "en";
+
+        document.documentElement.lang = ingles ? "en" : "es";
+
+        textos.forEach(function (texto) {
+          texto.nodo.nodeValue = ingles
+            ? texto.ingles
+            : texto.original;
+        });
+
+        atributos.forEach(function (dato) {
+          dato.elemento.setAttribute(
+            dato.atributo,
+            ingles ? dato.ingles : dato.original
+          );
+        });
+
+        document.title = ingles
+          ? "SG Logistic & Transporte | International logistics"
+          : tituloOriginal;
+
+        boton.textContent = ingles ? "Español" : "English";
+
+        boton.setAttribute(
+          "aria-label",
+          ingles ? "Cambiar a español" : "Switch to English"
+        );
+        const resultado = document.getElementById("resultado");
+        if (resultado) resultado.hidden = true;
+
+        const formulario = document.getElementById("formulario-cotizacion");
+
+        if (formulario) {
+          formulario.querySelectorAll("input, textarea").forEach(function (campo) {
+            campo.setCustomValidity("");
+          });
+        }
+
+        actualizarEstado();
+
+        try {
+          localStorage.setItem("sg-idioma", ingles ? "en" : "es");
+        } catch (error) {
+
+        }
+      }
+
+      boton.addEventListener("click", function () {
+        cambiarIdioma(
+          document.documentElement.lang === "en" ? "es" : "en"
+        );
+      });
+
+      let idiomaGuardado = "es";
+
+      try {
+        idiomaGuardado = localStorage.getItem("sg-idioma") || "es";
+      } catch (error) { }
+
+      cambiarIdioma(idiomaGuardado);
+    })();
+  </script>
 </body>
+
 </html>
