@@ -458,23 +458,97 @@
       color: #ff8793;
     }
 
-    .regiones {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0 30px;
+    
+    /* ALIANZAS INTERNACIONALES */
+
+    .cobertura .alianzas-contenido {
+     text-align: center;
     }
 
-    .regiones span {
-      padding: 20px 0;
-      border-bottom: 1px solid #ffffff30;
-      font-size: 18px;
-      font-weight: bold;
+    .cobertura .alianzas-titulo {
+     max-width: 950px;
+     margin: 0 auto 22px;
+     color: white;
     }
 
-    .nota-rutas {
-      margin-top: 25px;
-      font-size: 12px;
+    .cobertura .alianzas-descripcion {
+     max-width: 800px;
+     margin: 0 auto 38px;
+     color: #dce5f5;
+     font-size: 16px;
+     line-height: 1.8;
     }
+
+     /* CONTENEDOR DE LOS CINCO LOGOS */
+
+    .cobertura .logos-alianzas {
+     display: grid;
+     grid-template-columns: repeat(5, minmax(0, 1fr));
+     gap: 16px;
+     margin-top: 35px;
+    }
+
+     /* TARJETAS BLANCAS */
+
+    .cobertura .alianza-logo {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 155px;
+     padding: 20px;
+     background: white;
+     border-radius: 12px;
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+     transition: transform 0.3s ease;
+    }
+
+    .cobertura .alianza-logo:hover {
+     transform: translateY(-5px);
+    }
+
+     /* IMAGENES DE LAS ALIANZAS */
+
+    .cobertura .alianza-logo img {
+     width: 100%;
+     height: 105px;
+     object-fit: contain;
+    }
+
+     /* TABLET */
+
+    @media (max-width: 900px) {
+     .cobertura .logos-alianzas {
+       grid-template-columns: repeat(3, minmax(0, 1fr));
+     }
+    }
+
+     /* CELULARES */
+
+    @media (max-width: 600px) {
+    .cobertura .logos-alianzas {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .cobertura .alianza-logo {
+     min-height: 125px;
+     padding: 14px;
+    }
+
+    .cobertura .alianza-logo img {
+     height: 90px;
+    }
+
+    .cobertura .alianza-logo:last-child {
+     grid-column: 1 / -1;
+     width: calc(50% - 6px);
+     justify-self: center;
+    }
+
+    .cobertura .alianzas-descripcion {
+     font-size: 14px;
+    }
+  }
 
     .pasos {
       display: grid;
@@ -1304,7 +1378,7 @@
         <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
         <a href="#nosotros">Nosotros</a>
-        <a href="#cobertura">Alcance internacional</a>
+        <a href="#cobertura">Alianzas internacionales</a>
 
         <a class="boton" href="#contacto">
           Solicitar cotización
@@ -1521,54 +1595,62 @@
     </section>
 
     <section class="cobertura" id="cobertura">
-      <div class="contenedor dos-columnas">
+      <div class="contenedor alianzas-contenido">
+        
+        <span class="etiqueta">
+          03 / Alianzas internacionales
+        </span>
+        
+        <h2 class="alianzas-titulo">
+          CONECTAMOS EL SALVADOR CON EL MUNDO
+        </h2>
+        
+        <p class="alianzas-descripcion">
+          Nuestras alianzas internacionales nos permiten brindar
+          soluciones logísticas con alcance global. A través de
+          una sólida red de agentes y socios estratégicos,
+          facilitamos sus importaciones y exportaciones con
+          atención personalizada y cobertura internacional.
+        </p>
+        
+        <div class="logos-alianzas">
 
-        <div>
-          <span class="etiqueta">
-            03 / Alcance internacional
-          </span>
-
-          <h2>
-            Conectamos El Salvador<br>
-            con sus mercados.
-          </h2>
-
-          <p>
-            Coordinamos sus importaciones y exportaciones
-            mediante una red de agentes internacionales,
-            con opciones de transporte marítimo, aéreo
-            y terrestre.
-          </p>
-
-          <a class="boton boton-secundario" href="#contacto">
-            Consultar mi ruta →
-          </a>
-
-          <p class="nota-rutas">
-            Consulte la disponibilidad para su país de origen
-            y destino. Las rutas, modalidades y tiempos
-            se evalúan según cada embarque.
-          </p>
-        </div>
-
-        <div>
-          <div class="regiones">
-            <span>Centroamérica</span>
-            <span>Norteamérica</span>
-            <span>Sudamérica</span>
-            <span>Europa</span>
-            <span>Asia</span>
-            <span>Otros destinos bajo consulta</span>
+          <div class="alianza-logo">
+            <img src="Imagenes/scn.png"
+                 alt="Security Cargo Network"
+                 loading="lazy">
+          </div>
+          
+          <div class="alianza-logo">
+            
+            <img src="Imagenes/the-cooperative.png"
+                 alt="The Cooperative Logistics Network"
+                 loading="lazy">
           </div>
 
-          <p class="nota-rutas">
-            Soluciones desde y hacia El Salvador,
-            según las necesidades de su carga.
-          </p>
+          <div class="alianza-logo">
+            <img src="Imagenes/northstar.png"
+                 alt="Northstar CLN Networks"
+                 loading="lazy">
+          </div>
+
+          <div class="alianza-logo">
+           <img src="Imagenes/cln-premier.png"
+                alt="CLN Premier"
+                loading="lazy">
+         </div>
+
+         <div class="alianza-logo">
+           <img src="Imagenes/uln.png"
+                alt="United Logistic Network"
+                loading="lazy">
+         </div>
+
         </div>
 
       </div>
-    </section>
+   </section>
+
 
     <section>
       <div class="contenedor">
@@ -2379,15 +2461,17 @@ enviarCorreo.rel = "noopener noreferrer";
         "Ser la mejor decisión en transporte para nuestros clientes.":
           "To be our customers’ preferred transportation partner.",
 
-        "03 / Conexiones internacionales": "03 / International connections",
-        "Su próximo mercado": "Your next market",
-        "comienza con una conexión.": "starts with a connection.",
+       
+        "03 / Alianzas internacionales": "03 / International partnerships",
 
-        "Consulte las opciones disponibles para el origen y destino de su carga.":
-          "Ask about the available options for your cargo’s origin and destination.",
+        "Alianzas internacionales": "International partnerships",
 
-        "Las rutas y tiempos de tránsito se revisan según cada embarque.":
-          "Routes and transit times are assessed for each shipment.",
+        "CONECTAMOS EL SALVADOR CON EL MUNDO":
+         "CONNECTING EL SALVADOR TO THE WORLD",
+
+        "Nuestras alianzas internacionales nos permiten brindar soluciones logísticas con alcance global. A través de una sólida red de agentes y socios estratégicos, facilitamos sus importaciones y exportaciones con atención personalizada y cobertura internacional.":
+         "Our international partnerships allow us to provide logistics solutions with global reach. Through a strong network of agents and strategic partners, we facilitate your imports and exports with personalized service and international coverage.",
+
 
         "Origen": "Origin",
         "Destino": "Destination",
