@@ -369,35 +369,37 @@
       align-items: center;
     }
 
-    .panel-empresa {
-      position: relative;
-      overflow: hidden;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      min-height: 390px;
-      padding: 40px;
-      border-radius: 12px;
-
-      background:
-        linear-gradient(135deg, #171b20, #35404d);
-      color: white;
+   .panel-empresa {
+     position: relative;
+     overflow: hidden;
+     isolation: isolate;
+    
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+   
+     min-height: 390px;
+     padding: 40px;
+     border-radius: 12px;
+    
+     background:
+     linear-gradient(135deg, #171b20, #35404d);
+     color: white;
     }
 
     .panel-empresa::after {
       content: "";
       position: absolute;
-      top: -80px;
-      right: -130px;
-      width: 350px;
-      height: 350px;
-      border: 1px solid #ffffff20;
-      border-radius: 50%;
-      box-shadow:
-        0 0 0 45px #ffffff05,
-        0 0 0 90px #ffffff05;
+      top: 35px;
+      right: -120px;
+      width: 320px;
+      height: 320px;
+      background: url("Imagenes/logo-sg-blanco.png") no-repeat center;
+      background-size: contain;
+      opacity: 0.10;
+      filter: blur(1.5px);
+      pointer-events: none;
+      z-index: 0;
     }
 
     .panel-empresa strong {
